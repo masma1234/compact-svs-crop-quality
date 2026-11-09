@@ -1,7 +1,15 @@
 # Compact SVS Crop Color Evaluation
 
+> A research archive for camera-robust, non-destructive crop quality scoring
+> from compact spectral/vision-system (SVS) acquisitions.
+
 Research repository for an end-of-studies project on compact SVS acquisition and
 non-destructive crop color evaluation.
+
+This work investigates whether calibrated image color can provide a consistent
+proxy for ripeness and visual quality across acquisition devices. It combines
+color science, image-quality control, and custom convolutional neural networks
+to produce an interpretable ordinal score on a 1–9 scale.
 
 The project studies pepper, lettuce, and zucchini images acquired with different
 cameras and devices. The intended processing chain is:
@@ -9,8 +17,13 @@ cameras and devices. The intended processing chain is:
 1. **Color correction** to reduce device and camera bias.
 2. **Data-quality filtering** to remove bad pixels and retain valid, saturated
    pixels.
-3. **CNN-based color evaluation** that predicts an ordinal decimal score from
-   1 to 9 for ripeness and visual quality.
+3. **CNN-based color evaluation** that predicts an ordinal score from 1 to 9
+   for ripeness and visual quality.
+
+The experiments cover red and green pepper, lettuce, and zucchini, with
+comparisons across color-corrected and uncorrected acquisitions, camera/device
+conditions, color spaces, RAW encodings, filtering strategies, model depths,
+and ordinal/regression objectives.
 
 The repository is organized as a research archive: notebooks contain the
 experiments, while reports, presentations, and figures document the acquisition

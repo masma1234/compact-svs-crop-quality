@@ -1,0 +1,25 @@
+# Local data and generated experiment artifacts
+data/raw/**
+data/processed/**
+outputs/**
+checkpoints/**
+*.pth
+*.pt
+*.ckpt
+*.h5
+*.onnx
+
+# Notebook runtime files
+.ipynb_checkpoints/
+__pycache__/
+
+# Local environments and editor files
+.venv/
+venv/
+env/
+.env
+.vscode/
+
+# Temporary exports
+*.tmp
+*.log
